@@ -4,6 +4,12 @@ export async function fetchAppliances() {
   return res.json();
 }
 
+export async function fetchDevices() {
+  const res = await fetch('/api/devices');
+  if (!res.ok) throw new Error('デバイス情報の取得に失敗しました');
+  return res.json();
+}
+
 export async function sendSignal(signalId: string) {
   const res = await fetch(`/api/signals/${signalId}/send`, { method: 'POST' });
   if (!res.ok) throw new Error('Signal send failed');
@@ -17,3 +23,4 @@ export async function setAirconSettings(applianceId: string, settings: any) {
   });
   if (!res.ok) throw new Error('Aircon set failed');
 }
+

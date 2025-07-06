@@ -1,0 +1,24 @@
+{
+  "name": "remo-aircon-app",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^5.17.1",
+    "@mui/material": "^5.17.1",
+    "axios": "^1.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^5.0.0"
+  }
+}
